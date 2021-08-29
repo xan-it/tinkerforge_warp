@@ -1,0 +1,12 @@
+{
+	"id": "{FB1F6957-392A-0C5B-21B0-3A8FFE2EC81E}",
+	"author": "XAN",
+	"name": "Tinkerforge_Warp",
+	"url": "https://github.com/xan-it/tinkerforge_warp",
+	"compatibility": {
+        "version": "5.1"
+    },
+	"version": "1.0.0",
+	"build": 0,
+	"date": 0
+}

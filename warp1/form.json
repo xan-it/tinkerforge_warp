@@ -1,0 +1,13 @@
+{
+    "elements":
+    [
+      { "type": "ValidationTextBox", "name": "MQTTTopic", "caption": "MQTT Topic", "value": "warp/USF" },
+      { "type": "Select", "name": "Type", "caption": "Type",
+        "options": [
+          { "caption": "Select device version", "value": "" },
+          { "caption": "Warp 1", "value": "warp1" },
+          { "caption": "Warp 2", "value": "warp2" }
+        ]
+      }
+    ]
+}

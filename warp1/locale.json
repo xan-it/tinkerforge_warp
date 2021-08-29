@@ -1,0 +1,30 @@
+{
+  "translations": {
+    "de": {
+      "############## forms.json ##############": "",
+      "MQTT Topic": "MQTT Topic",
+      "Type": "Typ",
+      "Select device version": "Geräteversion auswählen",
+      "############## module.php ##############": "",
+      "Vehicle state": "Fahrzeugstatus",
+      "Charging current": "Ladestrom",
+      "Power consumption": "Leistungsaufnahme",
+      "Charging consumption": "Ladeverbrauch",
+      "Current consumption": "Stromverbrauch",
+      "Error condition": "Fehlerzustand",
+      "Time since state change": "Zeit seit Zustandswechsel",
+      "disconnected": "getrennt",
+      "connected": "verbunden",
+      "charging": "lädt",
+      "error": "Fehler",
+      "ok": "OK",
+      "switch error": "Schelterfehler",
+      "calibration error": "Kalibrierungsfehler",
+      "contactor error": "Schützfehler",
+      "communication error": "Kommunikationsfehler",
+      "Charging time": "Ladezeit",
+      "days": "Tage",
+      "Charge control": "Ladesteuerung"
+    }
+  }
+}
