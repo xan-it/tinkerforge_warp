@@ -60,7 +60,7 @@ class warp1 extends IPSModule
     public function RequestAction($Ident, $Value)
     {
         switch ($Ident) {
-            case 'Charging_Control':
+            case 'Charge_Control':
                 $this->SwitchMode($Value);
                 break;
         }
@@ -92,11 +92,11 @@ class warp1 extends IPSModule
                         $this->SetValue('Charging_Time', $this->SecondsToDHMS(floor($payload->time_since_state_change / 1000))); // ms > s > Unix Timestamp String
                         if ($this->GetValue('Warp_ConnectState') != 2) {
                             $this->kwh_start = 0.0; // mark start point with zero
-                            $this->SetValue('Charging_Control', 1);
+                            $this->SetValue('Charge_Control', true);
                         }
                     } else {
-                        if ($this->GetValue('Charging_Control') == 1) {
-                            $this->SetValue('Charging_Control', 0);
+                        if ($this->GetValue('Charge_Control') == true) {
+                            $this->SetValue('Charge_Control', false);
                         }
                     }
                     $this->SetValue('Warp_ConnectState', $payload->vehicle_state);
@@ -140,7 +140,7 @@ class warp1 extends IPSModule
             $Topic = $Topic.'stop_charging';
         }
         echo "sendMQTT:".$Topic."\n";
-    //    $this->sendMQTT($Topic, '');
+        $this->sendMQTT($Topic, '');
     }
 
 }
